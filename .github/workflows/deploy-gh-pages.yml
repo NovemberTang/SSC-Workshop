@@ -46,11 +46,11 @@ jobs:
           destination: ./_site      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
-      - name: Stop and check tracee results and create PR
-        uses: aquasecurity/tracee-action@0.4.0-stop
+      - name: Stop and Check Tracee results and create a PR
+        uses: aquasecurity/tracee-action@v0.4.0-stop
         with:
-          create-pr: 'true'
-          fail-on-diff: 'false'
+         create-pr: "true"
+         fail-on-diff: "false"
 
   # Deployment job
   deploy:
